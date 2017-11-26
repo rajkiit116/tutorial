@@ -14,10 +14,10 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan({ "com.javacodeuniversity.web" })
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
  
-	/*@Override
+	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/core/**");
-	}*/
+	}
 	
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
