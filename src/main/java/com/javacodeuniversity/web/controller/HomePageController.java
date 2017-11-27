@@ -6,17 +6,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HomePageController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-		return "welcome";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String testMethod(ModelMap model) {
-		return "test";
+		return "index";
 	}
 
 }

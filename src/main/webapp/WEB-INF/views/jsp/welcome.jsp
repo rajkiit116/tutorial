@@ -1,24 +1,13 @@
 <%@page session="false"%>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Spring MVC 4 + Ajax Hello World</title>
 
-<c:url var="home" value="/" scope="request" />
-<!-- 
-<spring:url value="hello.css" var="coreCss" />
-<spring:url value="bootstrap.min.css" var="bootstrapCss" />
-<spring:url value="jquery.1.10.2.min.js"	var="jqueryJs" />  -->
 
- 
- <spring:url value="/resources/core/css/hello.css" var="coreCss" />
-<spring:url value="/resources/core/css/bootstrap.min.css" var="bootstrapCss" />
-<spring:url value="/resources/core/js/jquery.1.10.2.min.js"	var="jqueryJs" />
-<link href="${bootstrapCss}" rel="stylesheet" />
-<link href="${coreCss}" rel="stylesheet" />
-<script src="${jqueryJs}"></script>
+
+<jsp:include page="header.jsp" />
+
 </head>
 
 <nav class="navbar navbar-inverse">

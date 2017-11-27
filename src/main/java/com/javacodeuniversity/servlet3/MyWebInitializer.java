@@ -2,7 +2,7 @@ package com.javacodeuniversity.servlet3;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.javacodeuniversity.config.SpringWebConfig;
+/*import com.javacodeuniversity.config.SpringWebConfig;
 
 public class MyWebInitializer extends
 		AbstractAnnotationConfigDispatcherServletInitializer {
@@ -23,3 +23,4 @@ public class MyWebInitializer extends
 	}
 
 }
+*/
