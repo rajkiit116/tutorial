@@ -36,7 +36,7 @@ public class HomePageController {
 	}
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String testMethod(ModelMap model) {
-		return "index";
+		return "welcome";
 	}
 
 }
