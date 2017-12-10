@@ -6,34 +6,43 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.javacodeuniversity.utility.PageConstants;
+import com.javacodeuniversity.utility.URIConstants;
+
 @Controller
 public class HomePageController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-		return "index";
+		return URIConstants.INDEX;// "index";
 	}	
-	@RequestMapping(value = "/DataStructure", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.DATASTRUCTURE , method = RequestMethod.GET)
 	public String getDataStructureTutorial(ModelMap model) {
-		return "/datastructure/datastructure";
+		return PageConstants.DATASTRUCTURE ;
 	}
-	@RequestMapping(value = "/SpringBoot", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.SPRINGBOOT , method = RequestMethod.GET)
 	public String getSpringBootTutorial(ModelMap model) {
-		return "/springboot/springboot";
+		return PageConstants.SPRINGBOOT ;
 	}
 	
-	@RequestMapping(value = "/Java", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.JAVA , method = RequestMethod.GET)
 	public String getJavaTutorial(ModelMap model) {
-		return "/java/java";
+		return PageConstants.JAVA ;
 	}
-	@RequestMapping(value = "/JavaCodingInterviewQuestion", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.JAVACODINGINTERVIEWQUESTION , method = RequestMethod.GET)
 	public String getJavaCodingInterviewQuestion(ModelMap model) {
-		return "/java/java_coding_interview_question/java_coding_interview_question";
+		return PageConstants.JAVACODINGINTERVIEWQUESTION ;
 	}
 	
-	@RequestMapping(value = "/JavaInterviewQuestion", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.JAVAINTERVIEWQUESTION , method = RequestMethod.GET)
 	public String getJavaInterviewQuestion(ModelMap model) {
-		return "/java/java_interview_question/java_interview_question";
+		return PageConstants.JAVAINTERVIEWQUESTION ;
 	}
+	@RequestMapping(value = URIConstants.ALGORITHM, method = RequestMethod.GET)
+	public String getAlgorithm(ModelMap model) {
+		return PageConstants.ALGORITHM ;
+	}
+	
+	
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String testMethod(ModelMap model) {
 		return "welcome";

@@ -5,30 +5,31 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.javacodeuniversity.utility.PageConstants;
+import com.javacodeuniversity.utility.URIConstants;
+
 
 @Controller
-@RequestMapping(value = "/DataStructure", method = RequestMethod.GET)
+@RequestMapping(value = URIConstants.DATASTRUCTURE , method = RequestMethod.GET)
 public class DataStructureController {
 
 	
-	@RequestMapping(value = "/Array", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.ARRAY , method = RequestMethod.GET)
 	public String getDataStructureArrayTutorial(ModelMap model) {
-		return "/datastructure/array/arrayhome";
+		return PageConstants.ARRAYHOME ;
 	}
 	
-	@RequestMapping(value = "/LinkedList", method = RequestMethod.GET)
+	@RequestMapping(value =URIConstants.LINKEDLIST , method = RequestMethod.GET)
 	public String getDataStructureTutorialLinkedList(ModelMap model) {
-		return "/datastructure/linkedlist/linkedlisthome";
+		return PageConstants.LINKEDLISTHOME ;
 	}
-	@RequestMapping(value = "/Tree", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.TREE , method = RequestMethod.GET)
 	public String getDataStructureTutorialTree(ModelMap model) {
-		return "/datastructure/tree/treehome";
+		return PageConstants.TREEHOME ;
 	}
-	@RequestMapping(value = "/Graph", method = RequestMethod.GET)
+	@RequestMapping(value = URIConstants.GRAPH , method = RequestMethod.GET)
 	public String getDataStructureGraphTutorial(ModelMap model) {
-		return "/datastructure/graph/graphhome";
+		return PageConstants.GRAPHHOME ;
 	}
-	
 
-
-	}
+}

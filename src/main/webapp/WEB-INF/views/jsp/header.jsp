@@ -136,6 +136,9 @@
                 </ul>
               </li>
               <li>
+                <a href="/tutorial/Algorithm">Algorithm</a>
+              </li>
+              <li>
                 <a href="/tutorial/SpringBoot">SpringBoot</a>
                  <ul class="dropdown">
                   <li><a href="about.html">About</a></li>
