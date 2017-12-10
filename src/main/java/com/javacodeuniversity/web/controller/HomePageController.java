@@ -38,6 +38,6 @@ public class HomePageController {
 	public String testMethod(ModelMap model) {
 		return "welcome";
 	}
-
+	
 }
 
